@@ -1,14 +1,28 @@
-# Pastas criadas pelo PyInstaller
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build and packaging
 build/
 dist/
-
-# Arquivos Python compilados
-*.pyc
-__pycache__/
-
-# Arquivos de configuração do PyInstaller
+*.egg-info/
 *.spec
 
-# IDEs e editores
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDEs and editors
 .vscode/
 .idea/
+
+# Operating systems
+.DS_Store
+Thumbs.db
