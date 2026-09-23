@@ -4,7 +4,7 @@ import qrcode
 from PIL import Image
 from qrcode.constants import ERROR_CORRECT_M
 
-from wifi_qr.core.wifi import WifiNetwork
+from wiglyph.core.wifi import WifiNetwork
 
 
 class QRGenerator:

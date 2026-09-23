@@ -1,6 +1,6 @@
 import pytest
 
-from wifi_qr.core.wifi import SecurityType, WifiNetwork, escape_wifi_value
+from wiglyph.core.wifi import SecurityType, WifiNetwork, escape_wifi_value
 
 
 def test_wpa_payload() -> None:

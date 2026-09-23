@@ -3,8 +3,8 @@ from pathlib import Path
 import pytest
 from PIL import Image
 
-from wifi_qr.core.qr_generator import QRGenerator
-from wifi_qr.core.wifi import SecurityType, WifiNetwork
+from wiglyph.core.qr_generator import QRGenerator
+from wiglyph.core.wifi import SecurityType, WifiNetwork
 
 
 @pytest.fixture

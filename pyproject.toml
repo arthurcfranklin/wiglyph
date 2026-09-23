@@ -3,9 +3,9 @@ requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "wifi-qr-generator"
+name = "wiglyph"
 version = "2.0.0.dev0"
-description = "Cross-platform desktop Wi-Fi QR code generator."
+description = "A private, cross-platform desktop app for sharing Wi-Fi access with QR codes."
 requires-python = ">=3.11"
 dependencies = [
     "Pillow>=11",
@@ -19,7 +19,7 @@ dev = [
 ]
 
 [project.scripts]
-wifi-qr = "wifi_qr.app:main"
+wiglyph = "wiglyph.app:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

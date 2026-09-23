@@ -1,0 +1,397 @@
+/* --------------------------------------------------------------------------
+   WiGlyph
+   Dark desktop application theme
+   -------------------------------------------------------------------------- */
+
+
+/* Base
+   -------------------------------------------------------------------------- */
+
+QMainWindow,
+QWidget#centralWidget {
+    background-color: #0e1014;
+    color: #f4f5f7;
+}
+
+QWidget {
+    color: #f4f5f7;
+    font-size: 14px;
+}
+
+QLabel {
+    background: transparent;
+}
+
+
+/* Typography
+   -------------------------------------------------------------------------- */
+
+QLabel#title {
+    color: #f4f5f7;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+QLabel#subtitle {
+    color: #929aa6;
+    font-size: 13px;
+}
+
+QLabel#sectionTitle {
+    color: #8d96a3;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+QLabel#fieldLabel {
+    color: #c9ced6;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+QLabel#secondaryText {
+    color: #929aa6;
+    font-size: 13px;
+}
+
+QLabel#mutedText {
+    color: #707985;
+    font-size: 12px;
+}
+
+
+/* Header
+   -------------------------------------------------------------------------- */
+
+QFrame#separator {
+    min-height: 1px;
+    max-height: 1px;
+
+    background-color: #20242b;
+    border: none;
+}
+
+QLabel#privacyBadge {
+    padding: 6px 10px;
+
+    background-color: #15181e;
+    color: #929aa6;
+
+    border: 1px solid #292e38;
+    border-radius: 7px;
+
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+/* Application modules
+   -------------------------------------------------------------------------- */
+
+QFrame#formModule,
+QFrame#resultModule,
+QFrame#detailsModule,
+QFrame#informationModule {
+    background-color: #12151a;
+
+    border: 1px solid #252a33;
+    border-radius: 12px;
+}
+
+QFrame#formModule,
+QFrame#resultModule {
+    min-height: 440px;
+    max-height: 440px;
+}
+
+
+/* Inputs
+   -------------------------------------------------------------------------- */
+
+QLineEdit,
+QComboBox {
+    min-height: 24px;
+    padding: 9px 12px;
+
+    background-color: #171a20;
+    color: #f4f5f7;
+
+    border: 1px solid #2b3039;
+    border-radius: 8px;
+
+    selection-background-color: #3c68b1;
+    selection-color: #ffffff;
+}
+
+QLineEdit:hover,
+QComboBox:hover {
+    border-color: #3a414d;
+}
+
+QLineEdit:focus,
+QComboBox:focus {
+    border-color: #557fc4;
+}
+
+QLineEdit:disabled,
+QComboBox:disabled {
+    background-color: #14171c;
+    color: #626a76;
+    border-color: #23272f;
+}
+
+
+/* Combo box
+   -------------------------------------------------------------------------- */
+
+QComboBox {
+    padding-right: 38px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+
+    width: 36px;
+
+    border: none;
+}
+
+QComboBox::down-arrow {
+    image: url("{{CHEVRON_ICON}}");
+
+    width: 16px;
+    height: 16px;
+}
+
+QComboBox QAbstractItemView {
+    padding: 4px;
+
+    background-color: #171a20;
+    color: #f4f5f7;
+
+    border: 1px solid #303640;
+    outline: none;
+
+    selection-background-color: #252b34;
+    selection-color: #ffffff;
+}
+
+
+/* Check box
+   -------------------------------------------------------------------------- */
+
+QCheckBox {
+    spacing: 9px;
+
+    background: transparent;
+    color: #c9ced6;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+
+    background-color: #171a20;
+
+    border: 1px solid #414854;
+    border-radius: 4px;
+}
+
+QCheckBox::indicator:hover {
+    border-color: #596372;
+}
+
+QCheckBox::indicator:checked {
+    image: url("{{CHECK_ICON}}");
+
+    background-color: #557fc4;
+    border-color: #557fc4;
+}
+
+
+/* Primary action
+   -------------------------------------------------------------------------- */
+
+QPushButton#primaryButton {
+    min-height: 24px;
+    padding: 10px 16px;
+
+    background-color: #557fc4;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 8px;
+
+    font-weight: 600;
+}
+
+QPushButton#primaryButton:hover {
+    background-color: #628bd0;
+}
+
+QPushButton#primaryButton:pressed {
+    background-color: #496fad;
+}
+
+QPushButton#primaryButton:disabled {
+    background-color: #252a32;
+    color: #646c78;
+}
+
+
+/* Secondary actions
+   -------------------------------------------------------------------------- */
+
+QPushButton#secondaryButton {
+    min-height: 22px;
+    padding: 8px 14px;
+
+    background-color: #181b21;
+    color: #d9dde3;
+
+    border: 1px solid #2c323c;
+    border-radius: 7px;
+
+    font-weight: 500;
+}
+
+QPushButton#secondaryButton:hover {
+    background-color: #1e2229;
+    border-color: #3b424e;
+}
+
+QPushButton#secondaryButton:pressed {
+    background-color: #15181d;
+}
+
+QPushButton#secondaryButton:disabled {
+    background-color: #15171c;
+    color: #555d68;
+    border-color: #232831;
+}
+
+
+/* QR preview
+   -------------------------------------------------------------------------- */
+
+QFrame#previewArea {
+    background-color: #101318;
+
+    border: 1px solid #20252d;
+    border-radius: 9px;
+}
+
+QLabel#emptyStateIcon {
+    color: #59616d;
+    font-size: 30px;
+}
+
+QLabel#emptyStateTitle {
+    color: #dfe2e7;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QLabel#emptyStateDescription {
+    color: #777f8b;
+    font-size: 12px;
+}
+
+QLabel#qrPreview {
+    background-color: #ffffff;
+
+    border: none;
+    border-radius: 8px;
+}
+
+QLabel#readyStatus {
+    color: #8d96a3;
+    font-size: 12px;
+}
+
+
+/* Access details
+   -------------------------------------------------------------------------- */
+
+QFrame#detailsModule {
+    min-height: 108px;
+}
+
+QWidget#detailsContent {
+    background: transparent;
+}
+
+QLabel#detailLabel {
+    color: #737c89;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+QLabel#detailValue {
+    color: #eef0f3;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* Information module
+   -------------------------------------------------------------------------- */
+
+QFrame#informationModule {
+    min-height: 72px;
+}
+
+QLabel#infoPanelTitle {
+    color: #8d96a3;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+QLabel#infoPanelDescription {
+    color: #c4c9d0;
+    font-size: 13px;
+}
+
+QFrame#informationDivider {
+    min-width: 1px;
+    max-width: 1px;
+
+    background-color: #292e38;
+    border: none;
+}
+
+
+/* Status
+   -------------------------------------------------------------------------- */
+
+QLabel#status {
+    color: #7fc69a;
+    font-size: 12px;
+}
+
+QLabel#status[error="true"] {
+    color: #e18484;
+}
+
+/* Footer
+   -------------------------------------------------------------------------- */
+
+QWidget#footer {
+    background: transparent;
+    border-top: 1px solid #20242b;
+}
+
+QLabel#footerCopyright,
+QLabel#footerMeta {
+    color: #626b77;
+    font-size: 11px;
+}
+
+QLabel#footerCopyright {
+    font-weight: 500;
+}
