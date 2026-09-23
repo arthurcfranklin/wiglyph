@@ -252,7 +252,8 @@ class MainWindow(QMainWindow):
         )
 
         preview_layout = QVBoxLayout(self.preview_area)
-        preview_layout.setContentsMargins(20, 18, 20, 18)
+        preview_layout.setContentsMargins(20, 14, 20, 14)
+        preview_layout.setSpacing(0)
 
         self.preview_stack = QStackedWidget()
         self.preview_stack.setObjectName("previewStack")
@@ -266,10 +267,6 @@ class MainWindow(QMainWindow):
         preview_layout.addWidget(self.preview_stack)
 
         layout.addWidget(self.preview_area)
-        layout.addSpacing(14)
-
-        self.actions_widget = self._create_actions()
-        layout.addWidget(self.actions_widget)
 
         return section
 
@@ -310,18 +307,20 @@ class MainWindow(QMainWindow):
         widget = QWidget()
 
         layout = QVBoxLayout(widget)
-        layout.setContentsMargins(8, 8, 8, 8)
-        layout.setSpacing(8)
+        layout.setContentsMargins(8, 10, 8, 10)
+        layout.setSpacing(10)
         layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.qr_label = QLabel()
         self.qr_label.setObjectName("qrPreview")
         self.qr_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.qr_label.setFixedSize(250, 250)
+        self.qr_label.setFixedSize(220, 220)
 
         self.ready_label = QLabel("Pronto para ler")
         self.ready_label.setObjectName("readyStatus")
         self.ready_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.actions_widget = self._create_actions()
 
         layout.addWidget(
             self.qr_label,
@@ -333,12 +332,21 @@ class MainWindow(QMainWindow):
             0,
             Qt.AlignmentFlag.AlignCenter,
         )
+        layout.addWidget(
+            self.actions_widget,
+            0,
+            Qt.AlignmentFlag.AlignCenter,
+        )
 
         return widget
 
     def _create_actions(self) -> QWidget:
         widget = QWidget()
         widget.setObjectName("actionsWidget")
+        widget.setSizePolicy(
+            QSizePolicy.Policy.Maximum,
+            QSizePolicy.Policy.Fixed,
+        )
 
         layout = QHBoxLayout(widget)
         layout.setContentsMargins(0, 0, 0, 0)
@@ -350,7 +358,6 @@ class MainWindow(QMainWindow):
         self.save_button = QPushButton("Salvar PNG")
         self.save_button.setObjectName("secondaryButton")
 
-        layout.addStretch(1)
         layout.addWidget(self.copy_button)
         layout.addWidget(self.save_button)
 
@@ -630,7 +637,7 @@ class MainWindow(QMainWindow):
         side = min(
             available_width,
             available_height,
-            250,
+            220,
         )
 
         scaled = self.current_pixmap.scaled(
@@ -709,7 +716,7 @@ class MainWindow(QMainWindow):
         message: str,
     ) -> str:
         translations = {
-            "SSID cannot be empty.": ("Informe o nome da rede."),
+            "SSID cannot be empty.": "Informe o nome da rede.",
             "Password is required for secured networks.": ("Informe a senha da rede."),
         }
 

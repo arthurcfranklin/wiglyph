@@ -17,6 +17,9 @@ dependencies = [
 dev = [
     "pytest>=8",
 ]
+build = [
+    "pyinstaller>=6.15,<7",
+]
 
 [project.scripts]
 wiglyph = "wiglyph.app:main"
