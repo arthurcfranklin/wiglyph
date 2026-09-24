@@ -42,7 +42,7 @@ exe = EXE(
     strip=False,
     upx=False,
     console=False,
-    icon=str(project_root / "assets" / "codeico.ico"),
+    icon=str(project_root / "assets" / "icon.ico"),
 )
 
 coll = COLLECT(
