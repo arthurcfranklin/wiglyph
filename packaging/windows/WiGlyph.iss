@@ -1,5 +1,5 @@
 #define MyAppName "WiGlyph"
-#define MyAppVersion "2.0.0-dev"
+#define MyAppVersion "2.0.0"
 #define MyAppPublisher "Arthur Franklin"
 #define MyAppExeName "WiGlyph.exe"
 
@@ -15,7 +15,7 @@ DefaultGroupName={#MyAppName}
 PrivilegesRequired=lowest
 
 OutputDir=..\..\dist\installer
-OutputBaseFilename=WiGlyph-2.0.0-dev-windows-x86_64-setup
+OutputBaseFilename=WiGlyph-2.0.0-windows-x86_64-setup
 
 SetupIconFile=..\..\assets\icon.ico
 UninstallDisplayIcon={app}\{#MyAppExeName}
