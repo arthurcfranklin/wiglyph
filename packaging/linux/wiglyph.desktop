@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=WiGlyph
+Comment=Share Wi-Fi access with QR codes
+Exec=WiGlyph
+Icon=wiglyph
+Terminal=false
+Categories=Utility;
+StartupNotify=true
