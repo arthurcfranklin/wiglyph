@@ -205,3 +205,9 @@ O WiGlyph é desenvolvido com:
 ## Versão
 
 Versão atual: `2.0.0`
+
+## Licença
+
+O WiGlyph é licenciado sob a [Licença MIT](LICENSE).
+
+Copyright © 2026 Arthur Franklin.

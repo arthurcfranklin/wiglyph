@@ -204,3 +204,9 @@ WiGlyph is built with:
 ## Version
 
 Current version: `2.0.0`
+
+## License
+
+WiGlyph is licensed under the [MIT License](LICENSE).
+
+Copyright © 2026 Arthur Franklin.
